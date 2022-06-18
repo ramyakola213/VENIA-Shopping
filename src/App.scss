@@ -1,0 +1,268 @@
+@import "aem-grid";
+@import "root";
+
+
+
+
+* {
+        box-sizing:border-box;
+  }
+
+
+
+      body 
+      {
+        height:100%;
+        padding:0;
+        margin:0;
+        top:1.3rem;
+        font-family: $venia-font-family-muli;
+        font-size:1rem;
+      }
+      
+      
+      h1,h2,h3 {
+        padding:0;
+        margin:0;
+      }
+      h4,h5,h6 {
+        padding:2px 0;
+        margin:2px 0;
+      }
+      
+    //  header
+
+      header {
+        background:$white;
+        padding: 20px 0;
+        width:100%;
+        color: $venia-color-172026;
+        top:0;
+        z-index:1;
+        border: 1px solid $gray-l2;
+      }
+      
+      h1 {
+        display:inline-block;
+        color: $venia-color-172026;
+
+      }
+      
+      i {
+        float:right;
+        font-size:1.9rem;
+        padding:.25rem .5rem;
+        color:black;
+      }
+      
+      .dropdown-content {
+          display: none;
+          position: absolute;
+          right:1px;
+          background-color:$white;
+          color: $venia-color-172026;
+          min-width: 100%;
+          top:0;
+          box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+          z-index: 1;
+          
+      }
+      
+      .dropdown-content a {
+          color: $venia-color-172026;;
+          padding: 12px 16px;
+          text-decoration: none;
+          display: block;
+        font-size: 1.5rem;
+      }
+      
+      .dropdown-content a:hover {
+        background-color: #f1f1f1;
+        color:black;
+      }
+      
+      .dropdown:hover .dropdown-content {
+          display: block;
+      }
+      
+
+      // HEADER ENDS
+
+      //Banner Starts
+
+      
+      .categories li, .designers li {
+        padding: 4px 0px;
+        font-family: SF Pro Text, Helvetica;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 1;
+        cursor: pointer;
+      }
+      .categories ul {
+        margin-top: 5px;
+        margin-left:0;
+        list-style: none;
+      }
+      hr{
+        margin-right:40px;
+        background-color: $gray-l2;
+        height: 1px;
+      }
+      .designers ul {
+        padding-left: 0;
+      }
+
+      input[type="checkbox"] {
+        margin-right: 12px;
+        font-weight: 100;
+      }
+      ul{
+        list-style: none;
+      }
+
+      .product-list{
+               margin-top:30px;
+      }
+      .icon-img{
+        width:20px;
+        padding: 0 2px;
+        margin-right: 4px;
+      }
+      .product-card{
+
+        display: flex;
+        flex-direction: column;
+        min-width: 0;
+        word-wrap: break-word;
+        background-color: #fff;
+        background-clip: border-box;
+        margin-bottom: 20px;
+
+        .card-img{
+
+          height: 280px;
+          border: 1px solid $gray-l2;
+          margin-right: 10px;
+        
+        
+          img{
+            padding: 30px;
+            
+            max-height: 100%;
+            max-width: 100%;
+          }
+          
+        
+        }
+        .heart{
+          width:20px;
+          padding-top:4px;
+        }
+
+      }
+      .skeleton-card{
+        margin:  10px;
+      }
+  footer{
+
+    font-size: 12px;
+    border: 1px solid $gray-l2;
+
+      // .footer-one{
+        
+      // }
+      .footer-two{
+        margin:30px 0;
+        padding: 10px 150px;
+        border-top: 1px solid $gray-l2;
+        .terms-policy{
+          text-align: right;
+        a{
+          padding-left: 10px;
+          text-decoration: underline;
+        }
+      }
+      }
+  }
+
+
+
+
+
+
+      @media (min-width:750px) {
+
+        .container
+        {
+         margin: 0 150px;
+        }
+
+        // Header
+
+        header .fas {
+          display:none;
+        }
+        
+        header {
+          text-align:center;
+        }
+        
+        nav {
+       
+          margin: 0 120px  ;
+           
+        }
+        
+        
+        h4.logo {
+          font-size:1rem;
+          display:inline-block;
+          text-align: left;
+          margin-left:1rem;
+        }
+        ul{
+          margin-left: 150px;
+          display:inline
+        }
+  
+        
+        nav li{
+          display:inline;
+          padding:6px;
+          
+          color: $venia-color-172026;
+          text-decoration:none;
+        }
+
+   .banner{
+
+    margin-bottom: 10px;
+
+          .banner-right{
+            // height:500px;
+            margin-top:15px;
+          }
+          .banner-left{
+            background-color: black;
+            text-align: center;
+            justify-content: center;
+           
+            color: $white;
+            height: 200px;
+            h1{
+              padding:20% ;
+              color:#f1f1f1
+            }
+          }
+        }
+
+          .sidebar{
+            width: 255px;
+          }
+  
+        
+  
+}

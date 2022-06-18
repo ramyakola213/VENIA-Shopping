@@ -1,0 +1,162 @@
+
+/* Colors: */
+$primary-d1: #172BC4;
+$primary-m1: #336DFF;
+$primary-brand: #1F39FF;
+$primary-l1: #3D84FF;
+$gray-d2: #181C24;
+$gray-d1: #535965;
+$gray-m1: #91959C;
+$gray-l2: #B5B7BC;
+$gray-l1: #E5E5E7;
+$white: #FFFFFF;
+$positive-2: #12805C;
+$positive-1: #268E6C;
+$negative-2: #C9252D;
+$negative-1: #D7373F;
+$venia-color-172026: #172026;
+
+/* Font/text values */
+$venia-font-family-muli: Muli;
+$venia-font-family-source-serif-pro: Source Serif Pro;
+$venia-font-style-normal: normal;
+$venia-font-style-italic: italic;
+$venia-font-weight-600: 600px;
+$venia-font-weight-normal: normal;
+$venia-font-weight-bold: bold;
+$venia-font-size-14: 14px;
+$venia-font-size-16: 16px;
+$venia-font-size-20: 20px;
+$venia-font-size-24: 24px;
+$venia-font-size-36: 36px;
+$venia-font-size-48: 48px;
+$venia-character-spacing-0: 0px;
+$venia-line-spacing-20: 20px;
+$venia-line-spacing-21: 21px;
+$venia-line-spacing-24: 24px;
+$venia-line-spacing-25: 25px;
+$venia-line-spacing-30: 30px;
+$venia-line-spacing-32: 32px;
+$venia-line-spacing-45: 45px;
+$venia-line-spacing-60: 60px;
+$venia-line-spacing-17-5: 17.5px;
+
+
+/* Character Styles */
+.display-xl-48-dekstop-only {
+font-family: $venia-font-family-source-serif-pro;
+font-style: $venia-font-style-normal;
+font-weight: $venia-font-weight-600;
+font-size: $venia-font-size-48;
+line-height: $venia-line-spacing-60;
+letter-spacing: $venia-character-spacing-0;
+color: $venia-color-172026;
+}
+.display-l-36- {
+font-family: $venia-font-family-source-serif-pro;
+font-style: $venia-font-style-normal;
+font-weight: $venia-font-weight-600;
+font-size: $venia-font-size-36;
+line-height: $venia-line-spacing-45;
+letter-spacing: $venia-character-spacing-0;
+color: $venia-color-172026;
+}
+.display-m-24- {
+font-family: $venia-font-family-source-serif-pro;
+font-style: $venia-font-style-normal;
+font-weight: $venia-font-weight-600;
+font-size: $venia-font-size-24;
+line-height: $venia-line-spacing-30;
+letter-spacing: $venia-character-spacing-0;
+color: $venia-color-172026;
+}
+.display-s-20- {
+font-family: $venia-font-family-source-serif-pro;
+font-style: $venia-font-style-normal;
+font-weight: $venia-font-weight-600;
+font-size: $venia-font-size-20;
+line-height: $venia-line-spacing-25;
+letter-spacing: $venia-character-spacing-0;
+color: $venia-color-172026;
+}
+.regular-heading-xl-24- {
+font-family: $venia-font-family-muli;
+font-style: $venia-font-style-normal;
+font-weight: $venia-font-weight-600;
+font-size: $venia-font-size-24;
+line-height: $venia-line-spacing-30;
+letter-spacing: $venia-character-spacing-0;
+color: $venia-color-172026;
+}
+.regular-heading-l-20- {
+font-family: $venia-font-family-muli;
+font-style: $venia-font-style-normal;
+font-weight: $venia-font-weight-600;
+font-size: $venia-font-size-20;
+line-height: $venia-line-spacing-25;
+letter-spacing: $venia-character-spacing-0;
+color: $venia-color-172026;
+}
+.regular-heading-m-16- {
+font-family: $venia-font-family-muli;
+font-style: $venia-font-style-normal;
+font-weight: $venia-font-weight-600;
+font-size: $venia-font-size-16;
+line-height: $venia-line-spacing-20;
+letter-spacing: $venia-character-spacing-0;
+color: $venia-color-172026;
+}
+.regular-heading-s-14- {
+font-family: $venia-font-family-muli;
+font-style: $venia-font-style-normal;
+font-weight: $venia-font-weight-bold;
+font-size: $venia-font-size-14;
+line-height: $venia-line-spacing-17-5;
+letter-spacing: $venia-character-spacing-0;
+color: $venia-color-172026;
+}
+.regular-body-l-20- {
+font-family: $venia-font-family-muli;
+font-style: $venia-font-style-normal;
+font-weight: $venia-font-weight-normal;
+font-size: $venia-font-size-20;
+line-height: $venia-line-spacing-30;
+letter-spacing: $venia-character-spacing-0;
+color: $venia-color-172026;
+}
+.regualr-body-m-16- {
+font-family: $venia-font-family-muli;
+font-style: $venia-font-style-normal;
+font-weight: $venia-font-weight-normal;
+font-size: $venia-font-size-16;
+line-height: $venia-line-spacing-24;
+letter-spacing: $venia-character-spacing-0;
+color: $venia-color-172026;
+}
+.regular-body-s-14- {
+font-family: $venia-font-family-muli;
+font-style: $venia-font-style-normal;
+font-weight: $venia-font-weight-normal;
+font-size: $venia-font-size-14;
+line-height: $venia-line-spacing-21;
+letter-spacing: $venia-character-spacing-0;
+color: $venia-color-172026;
+}
+.blockquote {
+font-family: $venia-font-family-muli;
+font-style: $venia-font-style-italic;
+font-weight: $venia-font-weight-normal;
+font-size: $venia-font-size-20;
+line-height: $venia-line-spacing-30;
+letter-spacing: $venia-character-spacing-0;
+color: $gray-d2;
+}
+.numbered-list {
+font-family: $venia-font-family-muli;
+font-style: $venia-font-style-normal;
+font-weight: $venia-font-weight-normal;
+font-size: $venia-font-size-16;
+line-height: $venia-line-spacing-32;
+letter-spacing: $venia-character-spacing-0;
+color: $gray-d2;
+}
