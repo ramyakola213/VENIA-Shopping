@@ -17,8 +17,10 @@ const Home = ()=>{
                     <img src={bg}  width="100%" height="50%" alt="banner"/>
                  </div>                
                 </div>
-                <Breadcrum></Breadcrum>
-                  <ProductList></ProductList>
+                
+                  <ProductList>
+                  
+                  </ProductList>
 
           </section>
         );

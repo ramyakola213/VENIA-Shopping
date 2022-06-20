@@ -1,4 +1,4 @@
-import { Dropdown } from "bootstrap";
+
 import React from "react";
 
 
@@ -15,7 +15,7 @@ const Breadcrum = ()=>{
                            <p><b>35 Results</b></p>
                      </div>
                      <div  className="aem-GridColumn aem-GridColumn--default--3">
-                           <input type={Dropdown}></input>
+                           <input type="text"></input>
                      </div>
                  </div>
                     

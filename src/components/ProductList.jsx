@@ -1,9 +1,12 @@
 
-import React, { useState, useEffect ,useMemo} from "react";
+import React, { useState, useEffect} from "react";
 import Skeleton from "react-loading-skeleton";
-import ReactPaginate from 'react-paginate';
+// import ReactPaginate from 'react-paginate';
 import heart from '../assets/heart.svg';
 import "react-loading-skeleton/dist/skeleton.css";
+import Breadcrum from "./Breadcrum";
+import {NavLink} from "react-router-dom";
+import ProductDetails from "./ProductDetails";
 
 
 
@@ -126,18 +129,21 @@ const ProductList = ()=>{
                                 {filter.map((product) => {
                                                 return (
                                                         <>   
+                                                          
                                                                <div className="product-card aem-GridColumn aem-GridColumn--default--3" >
+                                                               <NavLink to={`/products/${product.id}`}> 
                                                                         <div className="card-img">
-                                                                                <img src={product.image} className="card-img-top" alt={product.title} />
+                                                                            <img src={product.image} className="card-img-top" alt={product.title} />
                                                                         </div> 
                                                                                 
                                                                           <h5 className="">{product.title.substring(0,25)}</h5>
-                                                                          <h6 className=" "> ${product.price}</h6>
+                                                                            <h6 className=" "> ${product.price}</h6>
                                                                           <img src={heart} className="heart" alt="heart"/>
                                                                                       
                                                                                 
-                                                                        
+                                                                </NavLink>       
                                                                 </div>
+                                                                
                                                         </>
                                                 )
                                         })
@@ -152,10 +158,10 @@ const ProductList = ()=>{
 
                 <div className="product-list">
                     <div className="aem-Grid">
-                      
+                    <Breadcrum></Breadcrum>
                       <div className="aem-Grid aem-Grid--12">
-
-                             {loading ? <Loading /> : <ShowProductList />}
+                             
+                             { loading ? <Loading /> : <ShowProductList /> }
                  
                       </div>
                    </div>

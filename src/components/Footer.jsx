@@ -9,7 +9,7 @@ const Footer = ()=>{
                  <div className="aem-Grid aem-Grid--12 footer-one">
                  <div className="aem-GridColumn aem-GridColumn--default--3">
                   <ul>
-                        <li><h5>Account</h5></li>
+                        <li><h4>Account</h4></li>
                         <li> Sign In</li>
                         <li>Register</li>
                         <li>Order Status</li>
@@ -18,7 +18,7 @@ const Footer = ()=>{
                  </div>
                  <div className="aem-GridColumn aem-GridColumn--default--3">
                  <ul>
-                        <li><h5>About Us</h5></li>
+                        <li><h4>About Us</h4></li>
                         <li>Our Story</li>
                         <li>Careers</li>
                         <li></li>
@@ -26,7 +26,7 @@ const Footer = ()=>{
                  </div>
                  <div className="aem-GridColumn aem-GridColumn--default--3">
                  <ul>
-                        <li><h5>Help</h5></li>
+                        <li><h4>Help</h4></li>
                         <li>Contact Us</li>
                         <li>Order Status</li>
                         <li>Returns</li>
@@ -34,7 +34,7 @@ const Footer = ()=>{
                  </div>
                  <div className="aem-GridColumn aem-GridColumn--default--3">
                  <ul>
-                        <li><h5>Follow Us!</h5></li>
+                        <li><h4>Follow Us!</h4></li>
                         <li><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p></li>
                        
                   </ul>
