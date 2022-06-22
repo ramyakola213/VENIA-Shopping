@@ -16,7 +16,8 @@ const Cart = (props) => {
         return (
             <>
                 <div>
-                    
+                <div className="aem-Grid aem-Grid--12"><h1>Your shopping Bag</h1></div>
+
                     {storeData && storeData.handleCart && storeData.handleCart.length > 0 ? storeData.handleCart.map((product) => {
                         return (
                             <>
