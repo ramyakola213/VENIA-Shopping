@@ -4,17 +4,32 @@
 
 * {
   box-sizing: border-box;
+  }
+
+@mixin display {
+  display:inline;
+  font-family: $venia-font-family-muli;
+  font-style: $venia-font-style-normal;
+  font-size: $venia-font-size-16;
+  font-family: $venia-font-family-muli;
 }
-
-
+@mixin text-right {
+  text-align:right;
+  padding: 0 10px;
+}
+@mixin buttons {
+  width: 40px;
+  height: 30px;
+  border-radius:3px;
+  margin: 5px;
+}
 
 body {
   height: 100%;
   padding: 0;
   margin: 0;
-  top: 1.3rem;
   font-family: $venia-font-family-muli;
-  font-size: 1rem;
+  font-size: $venia-font-size-14;
 }
 
 
@@ -23,6 +38,7 @@ h2,
 h3 {
   padding: 0;
   margin: 0;
+  
 }
 
 h4,
@@ -44,20 +60,49 @@ header {
   border: 1px solid $gray-l2;
 
 
-h1 {
-  display: inline-block;
-  color: $venia-color-172026;
+
+.dropdown{
+
+  .logo-mobile{
+      float: right;
+     }
+  
+ 
+  i {
+    float: right;
+    font-size: 1.9rem;
+    padding: .25rem .5rem;
+    color: black;
+  }
+  h1 {
+    @include display;
+    font-size: $venia-font-size-24;
+    margin-left: 55px;
+  }
+
+  ul{
+    @include display;
+    float: right;
+    margin: -24px 0 0 47px;
+    li{
+      @include display;
+      }
+    }
+    &:hover {
+      .dropdown-content {
+        display: block;
+      }
+    }
+    .fas{
+      float:left;
+     }
 
 }
 
-i {
-  float: right;
-  font-size: 1.9rem;
-  padding: .25rem .5rem;
-  color: black;
-}
+  
 
-.dropdown-content {
+.dropdown-content 
+{
   display: none;
   position: absolute;
   right: 1px;
@@ -68,48 +113,88 @@ i {
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
 
+  a {
+    color: $venia-color-172026;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 1.5rem;
+    &:hover {
+      background-color: #f1f1f1;
+      color: black;
+    }
+  }
+
+  .sidebar{
+    padding: 30px;
+  }
 }
 
-.dropdown-content a {
-  color: $venia-color-172026;
-  ;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  font-size: 1.5rem;
-}
 
-.dropdown-content a:hover {
-  background-color: #f1f1f1;
-  color: black;
-}
 
-.dropdown:hover .dropdown-content {
-  display: block;
-}
+
 }
 
 // HEADER ENDS
 
 //Banner Starts
 
+.banner {
 
-.categories li,
-.designers li {
+  // margin-bottom: 10px;
+  display: flex;
+  flex-direction: column-reverse;
+  .banner-right {
+    // height:500px;
+    // margin-top: 15px;
+  }
+
+  .banner-left {
+    background-color: black;
+    text-align: center;
+    justify-content: center;
+    color: #FFFFFF;
+    width: 280px;
+    margin: -50px 20px 0 20px;
+    
+
+    h1 {
+      padding: 20%;
+      color: #f1f1f1;
+      font-family: $venia-font-family-source-serif-pro;
+      font-size: $venia-font-size-30;
+      
+        hr{
+          height: 8px ;
+          margin-left:45px;
+          background-color: $primary-brand;
+          border:2px solid $primary-brand;
+          border-radius: 4px;
+        }
+      
+    }
+  }
+}
+
+.categories{
+
+li
+ {
   padding: 4px 0px;
-  font-family: SF Pro Text, Helvetica;
+
   font-style: normal;
   font-weight: normal;
-  font-size: 12px;
+ 
   font-weight: 400;
   line-height: 1;
   cursor: pointer;
 }
 
-.categories ul {
+ ul {
   margin-top: 5px;
   margin-left: 0;
   list-style: none;
+}
 }
 
 hr {
@@ -132,14 +217,10 @@ ul {
 }
 
 .product-list {
-  margin-top: 30px;
+  margin: 20px;
 }
 
-.icon-img {
-  width: 20px;
-  padding: 0 2px;
-  margin-right: 4px;
-}
+
 
 .product-card {
 
@@ -153,13 +234,13 @@ ul {
 
   .card-img {
 
-    height: 280px;
+    height: 100px;
     border: 1px solid $gray-l2;
-    margin-right: 10px;
+    margin-right: 15px;
 
 
     img {
-      padding: 30px;
+      padding: 10px;
 
       max-height: 100%;
       max-width: 100%;
@@ -175,30 +256,46 @@ ul {
 
 }
 
+
+
 .skeleton-card {
   margin: 10px;
+}
+.product-details{
+  margin: 20px 0;
 }
 
 footer {
 
   font-size: 12px;
   border: 1px solid $gray-l2;
-
+  
   // .footer-one{
 
   // }
   .footer-two {
-    margin: 30px 0;
-    padding: 10px 150px;
+    margin: 20px 0;
+    padding: 15px 30px;
     border-top: 1px solid $gray-l2;
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: center;
 
     .terms-policy {
       text-align: right;
-
+     
       a {
         padding-left: 10px;
         text-decoration: underline;
       }
+    }
+    h3{
+      display:none;
+    }
+    .icon-img {
+      width: 25px;
+      padding: 0 2px;
+      margin-right: 10px;
     }
   }
 }
@@ -209,12 +306,17 @@ a{
   text-decoration: none;
   color: $gray-d2;
 }
+nav, .sidebar{
+  display: none;
+}
+.filter-input{
+  display:none;
+}
 
 
 
 
-
-@media (min-width:750px) {
+@media (min-width:730px) {
 
   .container {
     margin: 0px 150px;
@@ -231,25 +333,31 @@ a{
   }
 
   nav {
-
+    display: inline;
     margin: 0 120px;
 
-  }
+  
+    .filter-input{
+      display:inline;
+    }
 
-
-  h4.logo {
+  h4{
+     @include display();
+    .logo {
     font-size: 1rem;
     display: inline-block;
     text-align: left;
     margin-left: 1rem;
   }
-
+ }
+  }
+header{
   ul {
     margin-left: 150px;
     display: inline
   }
 
-
+}
   nav li {
     display: inline;
     padding: 6px;
@@ -258,34 +366,191 @@ a{
     text-decoration: none;
   }
 
+ 
+  .sidebar {
+    display: block;
+    width: 255px;
+  }
+   
+
+ 
   .banner {
 
     margin-bottom: 10px;
-
+    display:block ;
+    flex-direction: none;
     .banner-right {
       // height:500px;
-      margin-top: 15px;
+       margin-top: 10px;
     }
-
+  
     .banner-left {
-      background-color: black;
-      text-align: center;
-      justify-content: center;
 
-      color: $white;
-      height: 200px;
-
+      width:100%;
+      margin: 0px ;
+      
+  
       h1 {
-        padding: 20%;
+        
         color: #f1f1f1
       }
     }
   }
+  .product-card {
 
-  .sidebar {
-    width: 255px;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    margin-bottom: 20px;
+  
+    .card-img {
+  
+      height: 280px;
+      border: 1px solid $gray-l2;
+      margin-right: 10px;
+  
+  
+      img {
+        padding: 10px;
+  
+
+      }
+  
+  
+    }
+  
+    .heart {
+      width: 20px;
+      padding-top: 4px;
+    }
+  
   }
 
+
+  .colors{
+      
+     
+      li{
+       display: inline;
+      }
+      button{
+        @include buttons;
+        &.pink{
+          background: $color-1;
+          border: $color-1 ;
+          border-radius:2px;
+        }
+        &.black{
+          background: $venia-color-172026;
+          border: $venia-color-172026;
+         
+        }  &.green{
+          background:$color-4;
+          border: $color-4;
+         
+        }  &.blue{
+          background: $color-2;
+          border:$color-2 ;
+          
+        }
+        &.yellow{
+          background: $color-3;
+          border:$color-3;
+          
+        }
+        &.white{
+          background: $white;
+          border:2px solid $venia-color-172026;
+          
+        }
+        &.grr{
+          background: $color-7;
+          border:$color-7;
+          
+        }
+      }
+    
+    
   
+
+  }
+
+
+  .size{
+    li{
+      display: inline;
+     }
+    button{
+      @include buttons;
+      background: $white;
+      &.plus{
+        border-radius: 100%;
+        width:30px
+      }
+      &.quant{
+        width:50px;
+        padding: 6px;
+      }
+      
+    }
+  }
+  .pd-ul{
+    display:block;
+    margin-left:150px;
+
+  }
+  .contain{
+    margin:20px 20px 0 190px;
+  }
+
+  .add-to-cart{
+    background: $primary-brand;
+    border-radius: 28px;
+    border: $primary-brand;
+    color:$white;
+    text-transform: uppercase;
+    padding: 10px 50px;
+    cursor: pointer;
+  }
+footer {
+
+  font-size: 12px;
+  border: 1px solid $gray-l2;
+
+
+  // .footer-one{
+
+  // }
+  .footer-two {
+    margin: 30px 0;
+    padding: 20px 150px;
+    border-top: 1px solid $gray-l2;
+    display: block;
+    flex-direction: none;
+
+    .terms-policy {
+      text-align: right;
+
+      a {
+        padding-left: 10px;
+        text-decoration: underline;
+      }
+    }
+    h3{
+      float: left;
+      display:block;
+    }
+  }
+
+}
+.icon-img {
+  width: 20px;
+  padding: 0 2px;
+  margin: 0 4px  ;
+}
+
 
 }

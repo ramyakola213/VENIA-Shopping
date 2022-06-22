@@ -107,6 +107,19 @@ const ProductList = ()=>{
                           <li ><input type="checkbox" id="all" onClick={()=>filterProduct("electronics")}/> Electronics</li>
                          </ul>
                          <hr></hr>
+                         <p>Colors</p>
+                         <ul data-accordion className="categories colors"> 
+                          <li ><button className="pink"></button>   </li>
+                          <li ><button className="blue"></button>     </li>
+                          <li ><button className="black"></button>    </li><br/>
+                          <li ><button className="green"></button>    </li>
+                          <li ><button className="white" ></button></li>
+                          <li ><button className="yellow"></button></li><br/>
+                          
+                          <li ><button className="grr"></button>    </li>
+                          <li ><button className="pink" type="checkbox"></button>     </li>
+                         </ul>
+                         <hr></hr>
                          <p>Attribute</p>
                          <ul data-accordion className="categories"> 
                           <li ><input type="checkbox" id="all" onClick={ ()=>setFilter(data)  }/>   All </li>
@@ -130,13 +143,13 @@ const ProductList = ()=>{
                                                 return (
                                                         <>   
                                                           
-                                                               <div className="product-card aem-GridColumn aem-GridColumn--default--3" >
+                                                               <div className="product-card aem-GridColumn aem-GridColumn--default--3 aem-GridColumn--phone--4" >
                                                                <NavLink to={`/products/${product.id}`}> 
                                                                         <div className="card-img">
                                                                             <img src={product.image} className="card-img-top" alt={product.title} />
                                                                         </div> 
                                                                                 
-                                                                          <h5 className="">{product.title.substring(0,25)}</h5>
+                                                                          <h5 className="">{product.title.substring(0,20) }</h5>
                                                                             <h6 className=" "> ${product.price}</h6>
                                                                           <img src={heart} className="heart" alt="heart"/>
                                                                                       

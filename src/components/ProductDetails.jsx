@@ -61,41 +61,92 @@ const ShowProductDetails =() =>{
   return (
           <>
            <div className="aem-GridColumn aem-GridColumn--default--3">
-                 <ul style={{display:'block'}}>
+                 <ul class="pd-ul">
+                   <li> <img src={product.image} alt={product.title} height="100px" width="80px"/>  </li>
                    <li> <img src={product.image} alt={product.title} height="100px" width="80px"/>  </li>
                    <li> <img src={product.image} alt={product.title} height="100px" width="80px"/>  </li>
                    <li> <img src={product.image} alt={product.title} height="100px" width="80px"/>  </li>
                 </ul>
           </div>
           <div className="aem-GridColumn aem-GridColumn--default--4">
-                  <img src={product.image} alt={product.title} height="300px" width="300px"/> 
+                  <img src={product.image} alt={product.title} height="450px" width="300px"/> 
           </div>
           <div className="aem-GridColumn aem-GridColumn--default--3">
                   <h5 className="text-uppercase">
                        Home  / {product.category} / 
                   </h5>
-                  <h3 className="">{product.title}</h3>
+                  <h3 className="display-m-24-">{product.title}</h3>
                   <h3 className="">
                      $ {product.price}
                   </h3>
                   <p className="">Rating {product.rating && product.rating.rate}
                   
                   </p>
+                  
                   {/* <ReadMoreReact text={product.description}
-                  min={10}
-                  ideal={16}
-                  max={17}
+                  min={11}
+                  ideal={12}
+                  max={13}
                
                 readMoreText="click here to read more"/> */}
                  
                   <p className="lead"> {product.description}</p>
-                  <button className="btn btn-outline-dark px-4 py-2" onClick={()=>addProduct(product)}>
+                  <hr></hr>
+                  <p className='regular-heading-s-14-'>Colors</p>
+                         <ul data-accordion className="categories colors"> 
+                          <li ><button className="pink"></button>   </li>
+                          <li ><button className="blue"></button>     </li>
+                          <li ><button className="black"></button>    </li>
+ 
+                          
+                         
+                          <li ><button className="grr" type="checkbox"></button>     </li>
+                         </ul>
+                         <p className='regular-heading-s-14-'>Size</p>
+                         <ul data-accordion className="categories size"> 
+                          <li ><button className="">XS</button>   </li>
+                          <li ><button className="">S</button>     </li>
+                          <li ><button className="">M</button>    </li>
+                          <li ><button className="">L</button>   </li>
+                          <li ><button className="">XL</button>     </li>
+
+                         </ul>
+                         <p className='regular-heading-s-14-'>Quantity</p>
+                         <ul data-accordion className="categories size"> 
+                          <li ><button className="plus"  >-</button>   </li>
+                          <li ><button className="quant">1</button>     </li>
+                          <li ><button className="plus">+</button>    </li>
+                        
+
+                         </ul>
+                  <button className="add-to-cart" onClick={()=>addProduct(product)}>
                           Add to Cart
                   </button>
-                  {/* <NavLink to ="/cart" className="btn btn-dark ms-2 px-3 py-2">
-                          Go to cart
-                  </NavLink> */}
-          </div>
+         
+                  </div>
+                  <div className="aem-GridColumn aem-GridColumn--default--4 contain">
+                  <h3 className="display-m-24-">{product.title.substring(0,10)}</h3>
+                  <p>Description</p>
+                  <p className="lead"> {product.description}</p>
+
+                  </div>
+                  <div className="aem-GridColumn aem-GridColumn--default--3 ">
+                        <h3></h3>
+                        <h3>Details</h3>
+                      
+                        <p>Sweat-wicking</p>
+                        <p>Lightweight fabric</p>
+                        
+                  </div>
+                  <div className="aem-GridColumn aem-GridColumn--default--3">
+                        <br></br>
+                        <h3></h3>
+                      
+                        <p>Sweat-wicking</p>
+                        <p>Lightweight fabric</p>
+                        
+                  </div>
+         
 
           
           </>
@@ -106,7 +157,7 @@ const ShowProductDetails =() =>{
 return (
   <div>
   <div className="conatainer">
-  <div className="aem-Grid">
+  <div className="aem-Grid product-details">
   <div className="aem-Grid aem-Grid--12">
            {loading ? <Loading/> : <ShowProductDetails/>}
    </div>

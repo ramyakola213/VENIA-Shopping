@@ -15,6 +15,15 @@ $positive-1: #268E6C;
 $negative-2: #C9252D;
 $negative-1: #D7373F;
 $venia-color-172026: #172026;
+$color-1:#F9009A;
+$color-2: #6408D3;
+$color-3: #EBC250;
+$color-4:#AF52FF ;
+$color-5: #EB7327;
+$color-6: #FDBA5E;
+$color-7:#0073788C;
+
+
 
 /* Font/text values */
 $venia-font-family-muli: Muli;
@@ -28,6 +37,7 @@ $venia-font-size-14: 14px;
 $venia-font-size-16: 16px;
 $venia-font-size-20: 20px;
 $venia-font-size-24: 24px;
+$venia-font-size-30: 30px;
 $venia-font-size-36: 36px;
 $venia-font-size-48: 48px;
 $venia-character-spacing-0: 0px;
@@ -43,104 +53,85 @@ $venia-line-spacing-17-5: 17.5px;
 
 
 /* Character Styles */
+
+@mixin heading-font {
+        font-family: $venia-font-family-muli;
+        font-style: $venia-font-style-normal;
+        font-weight: $venia-font-weight-600; 
+        letter-spacing: $venia-character-spacing-0;
+        color: $venia-color-172026;  
+}
+
+
 .display-xl-48-dekstop-only {
-font-family: $venia-font-family-source-serif-pro;
-font-style: $venia-font-style-normal;
-font-weight: $venia-font-weight-600;
+@include heading-font;
 font-size: $venia-font-size-48;
 line-height: $venia-line-spacing-60;
-letter-spacing: $venia-character-spacing-0;
-color: $venia-color-172026;
+
 }
 .display-l-36- {
-font-family: $venia-font-family-source-serif-pro;
-font-style: $venia-font-style-normal;
-font-weight: $venia-font-weight-600;
+@include heading-font;
 font-size: $venia-font-size-36;
 line-height: $venia-line-spacing-45;
-letter-spacing: $venia-character-spacing-0;
-color: $venia-color-172026;
+
+
 }
 .display-m-24- {
-font-family: $venia-font-family-source-serif-pro;
-font-style: $venia-font-style-normal;
-font-weight: $venia-font-weight-600;
+@include heading-font;
 font-size: $venia-font-size-24;
 line-height: $venia-line-spacing-30;
-letter-spacing: $venia-character-spacing-0;
-color: $venia-color-172026;
+font-family:$venia-font-family-source-serif-pro;
+
 }
 .display-s-20- {
-font-family: $venia-font-family-source-serif-pro;
-font-style: $venia-font-style-normal;
-font-weight: $venia-font-weight-600;
+@include heading-font;
 font-size: $venia-font-size-20;
 line-height: $venia-line-spacing-25;
-letter-spacing: $venia-character-spacing-0;
-color: $venia-color-172026;
+
 }
 .regular-heading-xl-24- {
-font-family: $venia-font-family-muli;
-font-style: $venia-font-style-normal;
-font-weight: $venia-font-weight-600;
+  @include heading-font;
 font-size: $venia-font-size-24;
 line-height: $venia-line-spacing-30;
-letter-spacing: $venia-character-spacing-0;
-color: $venia-color-172026;
+
 }
 .regular-heading-l-20- {
-font-family: $venia-font-family-muli;
-font-style: $venia-font-style-normal;
-font-weight: $venia-font-weight-600;
+        @include heading-font;
 font-size: $venia-font-size-20;
 line-height: $venia-line-spacing-25;
-letter-spacing: $venia-character-spacing-0;
-color: $venia-color-172026;
+
 }
 .regular-heading-m-16- {
-font-family: $venia-font-family-muli;
-font-style: $venia-font-style-normal;
-font-weight: $venia-font-weight-600;
+@include heading-font;
+font-weight: $venia-font-weight-bold;
 font-size: $venia-font-size-16;
 line-height: $venia-line-spacing-20;
-letter-spacing: $venia-character-spacing-0;
-color: $venia-color-172026;
+
 }
 .regular-heading-s-14- {
-font-family: $venia-font-family-muli;
-font-style: $venia-font-style-normal;
+ @include heading-font;
 font-weight: $venia-font-weight-bold;
 font-size: $venia-font-size-14;
 line-height: $venia-line-spacing-17-5;
-letter-spacing: $venia-character-spacing-0;
-color: $venia-color-172026;
+
 }
 .regular-body-l-20- {
-font-family: $venia-font-family-muli;
-font-style: $venia-font-style-normal;
-font-weight: $venia-font-weight-normal;
+
 font-size: $venia-font-size-20;
 line-height: $venia-line-spacing-30;
-letter-spacing: $venia-character-spacing-0;
-color: $venia-color-172026;
+@include heading-font;
 }
 .regualr-body-m-16- {
-font-family: $venia-font-family-muli;
-font-style: $venia-font-style-normal;
-font-weight: $venia-font-weight-normal;
+ @include heading-font;
 font-size: $venia-font-size-16;
 line-height: $venia-line-spacing-24;
-letter-spacing: $venia-character-spacing-0;
-color: $venia-color-172026;
+
 }
 .regular-body-s-14- {
-font-family: $venia-font-family-muli;
-font-style: $venia-font-style-normal;
-font-weight: $venia-font-weight-normal;
+         @include heading-font;
 font-size: $venia-font-size-14;
 line-height: $venia-line-spacing-21;
-letter-spacing: $venia-character-spacing-0;
-color: $venia-color-172026;
+
 }
 .blockquote {
 font-family: $venia-font-family-muli;
@@ -152,11 +143,9 @@ letter-spacing: $venia-character-spacing-0;
 color: $gray-d2;
 }
 .numbered-list {
-font-family: $venia-font-family-muli;
-font-style: $venia-font-style-normal;
-font-weight: $venia-font-weight-normal;
+@include heading-font;
 font-size: $venia-font-size-16;
 line-height: $venia-line-spacing-32;
-letter-spacing: $venia-character-spacing-0;
+
 color: $gray-d2;
 }
