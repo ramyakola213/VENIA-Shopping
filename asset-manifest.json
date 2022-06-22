@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/VENIA-Shopping/static/css/main.77975edd.css",
-    "main.js": "/VENIA-Shopping/static/js/main.7dda75ea.js",
+    "main.js": "/VENIA-Shopping/static/js/main.296a919b.js",
     "static/js/787.f3f26a24.chunk.js": "/VENIA-Shopping/static/js/787.f3f26a24.chunk.js",
     "static/media/bg.jpg": "/VENIA-Shopping/static/media/bg.8d6fb2c15fa859c950bd.jpg",
     "index.html": "/VENIA-Shopping/index.html",
@@ -12,11 +12,11 @@
     "static/media/heart.svg": "/VENIA-Shopping/static/media/heart.a907ab68d10229f05d705226b23d8bf2.svg",
     "static/media/facebook.svg": "/VENIA-Shopping/static/media/facebook.b5b54c5572636785078aa70b8bdffe26.svg",
     "main.77975edd.css.map": "/VENIA-Shopping/static/css/main.77975edd.css.map",
-    "main.7dda75ea.js.map": "/VENIA-Shopping/static/js/main.7dda75ea.js.map",
+    "main.296a919b.js.map": "/VENIA-Shopping/static/js/main.296a919b.js.map",
     "787.f3f26a24.chunk.js.map": "/VENIA-Shopping/static/js/787.f3f26a24.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.77975edd.css",
-    "static/js/main.7dda75ea.js"
+    "static/js/main.296a919b.js"
   ]
 }
