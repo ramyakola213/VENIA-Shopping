@@ -2,7 +2,7 @@ import React from "react";
 import search from "../assets/search.svg";
 import user from "../assets/user.svg";
 import {NavLink} from "react-router-dom";
-import {  useDispatch,useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 
 
 
@@ -14,8 +14,8 @@ const Header = ()=>{
 
               
         <header>
-                 <div class="aem-Grid">
-                 <div className="aem-Grid    ">
+                 <div className="aem-Grid">
+                 
                   
                  <i className="fas fa-bars dropdown">
 
@@ -31,9 +31,9 @@ const Header = ()=>{
                        
                        <div className="aem-GridColumn aem-GridColumn--default--3">  
                          <div className="sidebar">
-                             <h3 class="regular-body-s-14-">Filters</h3>
+                             <h3 className="regular-body-s-14-">Filters</h3>
                              <hr></hr>  
-                             <p class="regular-body-s-14-">  Attribute     </p>   
+                             <p className="regular-body-s-14-">  Attribute     </p>   
                          <ul data-accordion className="categories"> 
                           <li ><input type="checkbox" id="all" />   All </li>
                           <li ><input type="checkbox" id="high" /> Women's Collection </li>
@@ -42,7 +42,7 @@ const Header = ()=>{
                           <li ><input type="checkbox" id="all" /> Electronics</li>
                          </ul>
                          <hr></hr>
-                        <p class="regular-body-s-14-"> Attribute</p>
+                        <p className="regular-body-s-14-"> Attribute</p>
 
                          <ul data-accordion className="categories"> 
                           <li ><input type="checkbox" id="all" />   All </li>
@@ -71,7 +71,7 @@ const Header = ()=>{
                         </div>
                      </div>
                 </i>
-                </div>
+                
                 </div>
 
                 <nav>

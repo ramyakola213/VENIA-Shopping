@@ -11,18 +11,12 @@ import { useDispatch, useSelector } from "react-redux";
 const Cart = (props) => {
     const storeData = useSelector(state => state);
 
-    // const handleUpdateCartQty = (lineItemId, quantity) => {
-    //     commerce.cart.update(lineItemId, { quantity }).then((resp) => {
-    //       setCart(resp.cart);
-    //     }).catch((error) => {
-    //       console.log('There was an error updating the cart items', error);
-    //     });
-    //   }
 
     const ItemsDetails = () => {
         return (
             <>
                 <div>
+                    
                     {storeData && storeData.handleCart && storeData.handleCart.length > 0 ? storeData.handleCart.map((product) => {
                         return (
                             <>

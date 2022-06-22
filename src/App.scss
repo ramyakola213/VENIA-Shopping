@@ -3,19 +3,19 @@
 
 
 * {
-  box-sizing: border-box;
+      box-sizing: border-box;
   }
 
 @mixin display {
-  display:inline;
-  font-family: $venia-font-family-muli;
-  font-style: $venia-font-style-normal;
-  font-size: $venia-font-size-16;
-  font-family: $venia-font-family-muli;
+      display:inline;
+      font-family: $venia-font-family-muli;
+      font-style: $venia-font-style-normal;
+      font-size: $venia-font-size-16;
+      font-family: $venia-font-family-muli;
 }
 @mixin text-right {
-  text-align:right;
-  padding: 0 10px;
+      text-align:right;
+      padding: 0 10px;
 }
 @mixin buttons {
   width: 40px;
@@ -74,6 +74,7 @@ header {
     padding: .25rem .5rem;
     color: black;
   }
+
   h1 {
     @include display;
     font-size: $venia-font-size-24;
@@ -83,7 +84,7 @@ header {
   ul{
     @include display;
     float: right;
-    margin: -24px 0 0 47px;
+    margin:6px 10px 0 0;
     li{
       @include display;
       }
@@ -262,7 +263,7 @@ ul {
   margin: 10px;
 }
 .product-details{
-  margin: 20px 0;
+  margin: 20px 15px;
 }
 
 footer {
@@ -301,7 +302,9 @@ footer {
 }
 
 //details
-
+.pd-ul{
+  display: none;
+}
 a{
   text-decoration: none;
   color: $gray-d2;
@@ -313,7 +316,78 @@ nav, .sidebar{
   display:none;
 }
 
+.colors{
+      
+     
+  li{
+   display: inline;
+  }
+  button{
+    @include buttons;
+    &.pink{
+      background: $color-1;
+      border: $color-1 ;
+      border-radius:2px;
+    }
+    &.black{
+      background: $venia-color-172026;
+      border: $venia-color-172026;
+     
+    }  &.green{
+      background:$color-4;
+      border: $color-4;
+     
+    }  &.blue{
+      background: $color-2;
+      border:$color-2 ;
+      
+    }
+    &.yellow{
+      background: $color-3;
+      border:$color-3;
+      
+    }
+    &.white{
+      background: $white;
+      border:2px solid $venia-color-172026;
+      
+    }
+    &.grr{
+      background: $color-7;
+      border:$color-7;
+      
+    }
+  }
 
+
+
+
+}
+
+
+.size{
+li{
+  display: inline;
+ }
+button{
+  @include buttons;
+  background: $white;
+  &.plus{
+    border-radius: 100%;
+    width:30px
+  }
+  &.quant{
+    width:50px;
+    padding: 6px;
+  }
+  
+}
+}
+.icon-img {
+  width: 20px;
+  padding: 0 2px;
+  margin: 0 4px  ;
+}
 
 
 @media (min-width:730px) {
@@ -430,73 +504,6 @@ header{
   }
 
 
-  .colors{
-      
-     
-      li{
-       display: inline;
-      }
-      button{
-        @include buttons;
-        &.pink{
-          background: $color-1;
-          border: $color-1 ;
-          border-radius:2px;
-        }
-        &.black{
-          background: $venia-color-172026;
-          border: $venia-color-172026;
-         
-        }  &.green{
-          background:$color-4;
-          border: $color-4;
-         
-        }  &.blue{
-          background: $color-2;
-          border:$color-2 ;
-          
-        }
-        &.yellow{
-          background: $color-3;
-          border:$color-3;
-          
-        }
-        &.white{
-          background: $white;
-          border:2px solid $venia-color-172026;
-          
-        }
-        &.grr{
-          background: $color-7;
-          border:$color-7;
-          
-        }
-      }
-    
-    
-  
-
-  }
-
-
-  .size{
-    li{
-      display: inline;
-     }
-    button{
-      @include buttons;
-      background: $white;
-      &.plus{
-        border-radius: 100%;
-        width:30px
-      }
-      &.quant{
-        width:50px;
-        padding: 6px;
-      }
-      
-    }
-  }
   .pd-ul{
     display:block;
     margin-left:150px;

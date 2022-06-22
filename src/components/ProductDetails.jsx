@@ -60,22 +60,22 @@ const ProductDetails = () => {
 const ShowProductDetails =() =>{
   return (
           <>
-           <div className="aem-GridColumn aem-GridColumn--default--3">
-                 <ul class="pd-ul">
+           <div className="aem-GridColumn aem-GridColumn--default--3 aem-GridColumn--phone--12">
+                 <ul className="pd-ul">
                    <li> <img src={product.image} alt={product.title} height="100px" width="80px"/>  </li>
                    <li> <img src={product.image} alt={product.title} height="100px" width="80px"/>  </li>
                    <li> <img src={product.image} alt={product.title} height="100px" width="80px"/>  </li>
                    <li> <img src={product.image} alt={product.title} height="100px" width="80px"/>  </li>
                 </ul>
           </div>
-          <div className="aem-GridColumn aem-GridColumn--default--4">
+          <div className="aem-GridColumn aem-GridColumn--default--4 aem-GridColumn--phone--12">
                   <img src={product.image} alt={product.title} height="450px" width="300px"/> 
           </div>
-          <div className="aem-GridColumn aem-GridColumn--default--3">
+          <div className="aem-GridColumn aem-GridColumn--default--3 aem-GridColumn--phone--12">
                   <h5 className="text-uppercase">
                        Home  / {product.category} / 
                   </h5>
-                  <h3 className="display-m-24-">{product.title}</h3>
+                  <h3 className="display-m-24- ">{product.title}</h3>
                   <h3 className="">
                      $ {product.price}
                   </h3>
@@ -124,8 +124,9 @@ const ShowProductDetails =() =>{
                   </button>
          
                   </div>
+                 
                   <div className="aem-GridColumn aem-GridColumn--default--4 contain">
-                  <h3 className="display-m-24-">{product.title.substring(0,10)}</h3>
+                  <h3 className="display-m-24-">{product.title}</h3>
                   <p>Description</p>
                   <p className="lead"> {product.description}</p>
 
