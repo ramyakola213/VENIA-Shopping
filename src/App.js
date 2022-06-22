@@ -19,7 +19,7 @@ function App() {
          <Header></Header>
 
          <Routes>
-          <Route exact path="/VENIA-Shopping" element={<Home/>}></Route>
+          <Route exact path="VENIA-Shopping" element={<Home/>}></Route>
           <Route exact path="/ProductList" element= {<ProductList/>}></Route>
           <Route exact path="/products/:id" element= {<ProductDetails/>}/>
           <Route exact path="/Cart" element= {<Cart/>}/>

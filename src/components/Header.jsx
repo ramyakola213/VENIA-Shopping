@@ -77,10 +77,10 @@ const Header = ()=>{
                 <nav>
                      <h4 className="logo">V E N I A</h4>   
                      <ul>
-                     <li><NavLink to="/" > Home </NavLink></li>
+                     <li><NavLink to="VENIA-Shopping" > Home </NavLink></li>
                         <li><NavLink to="/ProductList" > Women </NavLink></li>
                         <li> <NavLink to="/men's clothing" >Men </NavLink></li>
-                        <li> <NavLink to="/" >Smart Gear </NavLink></li>
+                        <li> <NavLink to="VENIA-Shopping" >Smart Gear </NavLink></li>
                         
                      </ul>
                      <ul>
