@@ -1,6 +1,7 @@
 import React from "react";
 import search from "../assets/search.svg";
 import user from "../assets/user.svg";
+import cart from "../assets/cart.svg";
 import {NavLink} from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 
@@ -19,12 +20,12 @@ const Header = ()=>{
                   
                  <i className="fas fa-bars dropdown">
 
-                 <h1 className=""> <NavLink to="/">V E N I A </NavLink></h1>
+                 <h1 className=""> <NavLink to="VENIA-Shopping">V E N I A </NavLink></h1>
                  <ul >
                   
-                        <li> <NavLink to="/login" ><img src={search} alt="search" className="icon-img"/> </NavLink></li>
+                        <li> <NavLink to="VENIA-Shopping" ><img src={search} alt="search" className="icon-img"/> </NavLink></li>
                        
-                        <li> <NavLink to="/login" >Cart </NavLink></li>
+                        <li> <NavLink to="/cart" ><img src={cart} alt="user" className="icon-img"/></NavLink></li>
                  </ul>                
                 
                      <div className="dropdown-content">
@@ -78,15 +79,15 @@ const Header = ()=>{
                      <h4 className="logo">V E N I A</h4>   
                      <ul>
                      <li><NavLink to="VENIA-Shopping" > Home </NavLink></li>
-                        <li><NavLink to="/ProductList" > Women </NavLink></li>
-                        <li> <NavLink to="/men's clothing" >Men </NavLink></li>
-                        <li> <NavLink to="VENIA-Shopping" >Smart Gear </NavLink></li>
+                        <li><NavLink to="VENIA-Shopping" > Women </NavLink></li>
+                        <li> <NavLink to="VENIA-Shopping" >Men </NavLink></li>
+                        <li> <NavLink to="/ProductList" >Smart Gear </NavLink></li>
                         
                      </ul>
                      <ul>
-                        <li> <NavLink to="/login" ><img src={search} alt="search" className="icon-img"/>Search </NavLink></li>
-                        <li> <NavLink to="/login" ><img src={user} alt="user" className="icon-img"/>Sign in </NavLink></li>
-                        <li> <NavLink to="/cart" storeData={stateData} >Cart ({stateData? stateData.length > 0 ? stateData.length: '':''} )</NavLink></li>
+                        <li> <NavLink to="VENIA-Shopping" ><img src={search} alt="search" className="icon-img"/>Search </NavLink></li>
+                        <li> <NavLink to="VENIA-Shopping" ><img src={user} alt="user" className="icon-img"/>Sign in </NavLink></li>
+                        <li> <NavLink to="/cart" storeData={stateData} ><img src={cart} alt="user" className="icon-img"/>{stateData? stateData.length > 0 ? stateData.length: '':''} </NavLink></li>
                      </ul>                
                 </nav>
         

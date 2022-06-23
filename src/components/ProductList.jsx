@@ -47,22 +47,22 @@ const ProductList = ()=>{
                                 <Skeleton  height={800} />
                         </div>
                         <div className="aem-GridColumn aem-GridColumn--default--3">
-                        <Skeleton className="skeleton-card" width={200} height={350} />
+                        <Skeleton className="skeleton-card" />
                         </div>
                         <div className="aem-GridColumn aem-GridColumn--default--3">
-                        <Skeleton className="skeleton-card" width={200} height={350} />
+                        <Skeleton className="skeleton-card" />
                         </div>
                         <div className="aem-GridColumn aem-GridColumn--default--3">
-                        <Skeleton className="skeleton-card" width={200} height={350} />
+                        <Skeleton className="skeleton-card" />
                         </div>
                         <div className="aem-GridColumn aem-GridColumn--default--3">
-                        <Skeleton className="skeleton-card" width={200} height={350} />
+                        <Skeleton className="skeleton-card" />
                         </div>
                         <div className="aem-GridColumn aem-GridColumn--default--3">
-                        <Skeleton className="skeleton-card" width={200} height={350} />
+                        <Skeleton className="skeleton-card" />
                         </div>
                         <div className="aem-GridColumn aem-GridColumn--default--3">
-                        <Skeleton className="skeleton-card" width={200} height={350} />
+                        <Skeleton className="skeleton-card" />
                         </div>
                         
                      
@@ -83,28 +83,39 @@ const ProductList = ()=>{
         const ShowProductList = () => {
                 return (
                         <>
-                               
+                                 <div className="aem-Grid aem-Grid--12">
+                                       
+                                       <div  className="aem-GridColumn aem-GridColumn--default--3 aem-GridColumn--phone--12">
+                                             <p> Clothing / Women / Outwear</p>
+                                       </div>
+                                       <div  className="aem-GridColumn aem-GridColumn--default--6 aem-GridColumn--phone--12">
+                                             <p><b>25 Results</b></p>
+                                       </div>
+                                       <div  className="aem-GridColumn aem-GridColumn--default--3 filter-input">
+                                       <select class="sort"><option value="Latest"  onClick={()=>filterProduct("women's clothing")}> Latest</option>
+                                       <option value="old"  onClick={()=> filterProduct("men's clothing")}> New</option><option value="old"  onClick={()=>filterProduct("jewelery")}> Old</option></select>
+                                       </div>
+                                   </div>
                        <div className="aem-GridColumn aem-GridColumn--default--3">  
                          <div className="sidebar">
                              Filters
                              <hr></hr>  
-                             Attribute        
-                         <ul data-accordion className="categories"> 
-                          <li ><input type="checkbox" id="all" onClick={ ()=>setFilter(data)  }/>   All </li>
-                          <li ><input type="checkbox" id="high" onClick={()=>filterProduct("women's clothing")}/> Women's Collection </li>
-                          <li ><input type="checkbox" id="low" onClick={()=> filterProduct("men's clothing")}/> Men's collection </li>
-                          <li ><input type="checkbox" id="boots" onClick={()=>filterProduct("jewelery")}/> Jewelery</li>
-                          <li ><input type="checkbox" id="all" onClick={()=>filterProduct("electronics")}/> Electronics</li>
+                             Categories        
+                         <ul data-accordion className="categories cat"> 
+                          <li  onClick={()=>filterProduct("women's clothing")}><input type="checkbox" id="high" /> Women's Collection </li>
+                          <li  onClick={()=> filterProduct("men's clothing")}><input type="checkbox" id="low" /> Men's collection </li>
+                          <li  onClick={()=>filterProduct("jewelery")} ><input type="checkbox" id="boots"/> Jewelery</li>
+                          <li  onClick={()=>filterProduct("electronics")}><input type="checkbox" id="all" /> Electronics</li>
                          </ul>
                          <hr></hr>
-                         Attribute
+                          Brands
 
                          <ul data-accordion className="categories"> 
                           <li ><input type="checkbox" id="all" onClick={ ()=>setFilter(data)  }/>   All </li>
-                          <li ><input type="checkbox" id="high" onClick={()=>filterProduct("women's clothing")}/> Women's Collection </li>
-                          <li ><input type="checkbox" id="low" onClick={()=> filterProduct("men's clothing")}/> Men's collection </li>
-                          <li ><input type="checkbox" id="boots" onClick={()=>filterProduct("jewelery")}/> Jewelery</li>
-                          <li ><input type="checkbox" id="all" onClick={()=>filterProduct("electronics")}/> Electronics</li>
+                          <li ><input type="checkbox" id="high" onClick={()=>filterProduct("women's clothing")}/> Avasa</li>
+                          <li ><input type="checkbox" id="low" onClick={()=> filterProduct("men's clothing")}/> Levi's </li>
+                          <li ><input type="checkbox" id="boots" onClick={()=>filterProduct("jewelery")}/> Allen Solly</li>
+                          <li ><input type="checkbox" id="all" onClick={()=>filterProduct("electronics")}/> Wrangler</li>
                          </ul>
                          <hr></hr>
                          <p>Colors</p>
@@ -117,22 +128,22 @@ const ProductList = ()=>{
                           <li ><button className="yellow"></button></li><br/>
                           
                           <li ><button className="grr"></button>    </li>
-                          <li ><button className="pink" type="checkbox"></button>     </li>
+                          <li ><button className="red" type="checkbox"></button>     </li>
                          </ul>
                          <hr></hr>
-                         <p>Attribute</p>
+                         <p>Size</p>
                          <ul data-accordion className="categories"> 
                           <li ><input type="checkbox" id="all" onClick={ ()=>setFilter(data)  }/>   All </li>
-                          <li ><input type="checkbox" id="high" onClick={()=>filterProduct("women's clothing")}/> Women's Collection </li>
-                          <li ><input type="checkbox" id="low" onClick={()=> filterProduct("men's clothing")}/> Men's collection </li>
-                          <li ><input type="checkbox" id="boots" onClick={()=>filterProduct("jewelery")}/> Jewelery</li>
+                          <li ><input type="checkbox" id="high" onClick={()=>filterProduct("women's clothing")}/> X-Small</li>
+                          <li ><input type="checkbox" id="low" onClick={()=> filterProduct("men's clothing")}/> Small</li>
+                          <li ><input type="checkbox" id="boots" onClick={()=>filterProduct("jewelery")}/> Medium</li>
+                          <li ><input type="checkbox" id="all" onClick={()=>filterProduct("electronics")}/> Large</li>
+                          <li ><input type="checkbox" id="low" onClick={()=> filterProduct("men's clothing")}/> X-Large </li>
+                          <li ><input type="checkbox" id="boots" onClick={()=>filterProduct("jewelery")}/> XXX</li>
                           <li ><input type="checkbox" id="all" onClick={()=>filterProduct("electronics")}/> Electronics</li>
-                          <li ><input type="checkbox" id="low" onClick={()=> filterProduct("men's clothing")}/> Men's collection </li>
-                          <li ><input type="checkbox" id="boots" onClick={()=>filterProduct("jewelery")}/> Jewelery</li>
-                          <li ><input type="checkbox" id="all" onClick={()=>filterProduct("electronics")}/> Electronics</li>
-                          <li ><input type="checkbox" id="low" onClick={()=> filterProduct("men's clothing")}/> Men's collection </li>
-                          <li ><input type="checkbox" id="boots" onClick={()=>filterProduct("jewelery")}/> Jewelery</li>
-                          <li ><input type="checkbox" id="all" onClick={()=>filterProduct("electronics")}/> Electronics</li>
+                          <li ><input type="checkbox" id="low" onClick={()=> filterProduct("men's clothing")}/> Large </li>
+                          <li ><input type="checkbox" id="boots" onClick={()=>filterProduct("jewelery")}/> Small</li>
+                          <li ><input type="checkbox" id="all" onClick={()=>filterProduct("electronics")}/> Extra Large</li>
                          </ul>
                          <hr></hr>
                          </div>
@@ -141,7 +152,10 @@ const ProductList = ()=>{
 
                                 {filter.map((product) => {
                                                 return (
-                                                        <>   
+                                                        <>        <div>
+                                                      
+                                                           
+                                                       </div>
                                                           
                                                                <div className="product-card aem-GridColumn aem-GridColumn--default--3 aem-GridColumn--phone--4" >
                                                                <NavLink to={`/products/${product.id}`}> 
@@ -171,7 +185,7 @@ const ProductList = ()=>{
 
                 <div className="product-list">
                     <div className="aem-Grid">
-                    <Breadcrum></Breadcrum>
+               
                       <div className="aem-Grid aem-Grid--12">
                              
                              { loading ? <Loading /> : <ShowProductList /> }
