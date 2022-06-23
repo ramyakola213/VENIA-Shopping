@@ -1,22 +1,25 @@
 {
   "files": {
-    "main.css": "/VENIA-Shopping/static/css/main.77975edd.css",
-    "main.js": "/VENIA-Shopping/static/js/main.296a919b.js",
+    "main.css": "/VENIA-Shopping/static/css/main.303f23fd.css",
+    "main.js": "/VENIA-Shopping/static/js/main.c24c6be0.js",
     "static/js/787.f3f26a24.chunk.js": "/VENIA-Shopping/static/js/787.f3f26a24.chunk.js",
     "static/media/bg.jpg": "/VENIA-Shopping/static/media/bg.8d6fb2c15fa859c950bd.jpg",
+    "static/media/trash-2.svg": "/VENIA-Shopping/static/media/trash-2.a3e697fde0ae7e80f40a3f3214ef433d.svg",
     "index.html": "/VENIA-Shopping/index.html",
     "static/media/instagram.svg": "/VENIA-Shopping/static/media/instagram.098205e681981cff2deaa43da7f8afa7.svg",
+    "static/media/cart.svg": "/VENIA-Shopping/static/media/cart.7865a20d4f73677ab5144fd6411a11f8.svg",
     "static/media/user.svg": "/VENIA-Shopping/static/media/user.36f9dff636796a3645348ee7f29f2509.svg",
     "static/media/search.svg": "/VENIA-Shopping/static/media/search.d9388588132a09c360a92e9f450b2fa1.svg",
     "static/media/twitter.svg": "/VENIA-Shopping/static/media/twitter.3d9f31115be6b897b5d45c0aad4c1c1f.svg",
     "static/media/heart.svg": "/VENIA-Shopping/static/media/heart.a907ab68d10229f05d705226b23d8bf2.svg",
+    "static/media/edit-2.svg": "/VENIA-Shopping/static/media/edit-2.d86fb5c57c99ad0d8312adf90283ac77.svg",
     "static/media/facebook.svg": "/VENIA-Shopping/static/media/facebook.b5b54c5572636785078aa70b8bdffe26.svg",
-    "main.77975edd.css.map": "/VENIA-Shopping/static/css/main.77975edd.css.map",
-    "main.296a919b.js.map": "/VENIA-Shopping/static/js/main.296a919b.js.map",
+    "main.303f23fd.css.map": "/VENIA-Shopping/static/css/main.303f23fd.css.map",
+    "main.c24c6be0.js.map": "/VENIA-Shopping/static/js/main.c24c6be0.js.map",
     "787.f3f26a24.chunk.js.map": "/VENIA-Shopping/static/js/787.f3f26a24.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.77975edd.css",
-    "static/js/main.296a919b.js"
+    "static/css/main.303f23fd.css",
+    "static/js/main.c24c6be0.js"
   ]
 }
